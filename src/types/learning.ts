@@ -1,6 +1,6 @@
 /** Shared learning types. Content lives in src/data, UI in src/components. */
 
-export const CEFR_LEVELS = ["A1", "A2", "B1", "B2"] as const;
+export const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 export type CefrLevel = (typeof CEFR_LEVELS)[number];
 
 export const CEFR_LABELS: Record<CefrLevel, string> = {
@@ -8,7 +8,11 @@ export const CEFR_LABELS: Record<CefrLevel, string> = {
   A2: "Elementary",
   B1: "Intermediate",
   B2: "Upper-intermediate",
+  C1: "Advanced",
+  C2: "Proficient",
 };
+
+export type VocabularyKind = "word" | "idiom";
 
 export type PartOfSpeech =
   | "noun"
@@ -39,6 +43,7 @@ export interface VocabularyItem {
   topic: VocabularyTopic;
   synonyms?: string[];
   antonyms?: string[];
+  kind?: VocabularyKind;
 }
 
 export interface VocabularyFilterState {

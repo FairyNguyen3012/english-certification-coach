@@ -10,7 +10,7 @@ export default function VocabularyPage() {
     <>
       <PageHeader
         title="Vocabulary"
-        description="Learn words from A1 to B2 with IPA, Vietnamese meanings and examples. Browse, practise with flashcards, then test yourself."
+        description="Learn words and idioms from A1 to C2 with IPA, Vietnamese meanings and examples. Browse, practise with flashcards, then test yourself."
       />
       <VocabularyExplorer items={vocabularyItems} topics={vocabularyTopics} />
     </>

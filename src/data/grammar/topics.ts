@@ -631,6 +631,153 @@ export const grammarTopics: GrammarTopic[] = [
       },
     ],
   },
+  {
+    id: "conditionals",
+    title: "Conditionals",
+    level: "B2",
+    summary: "Express real, possible and imaginary results with if-clauses.",
+    explanation: [
+      "Use the first conditional for a real future possibility and the second conditional for an unlikely or imaginary situation.",
+      "Use the third conditional to imagine a different past result. The mixed conditional connects a past condition with a present result.",
+    ],
+    form: [
+      "First: if + present, will + verb → If it rains, we will stay inside.",
+      "Second: if + past, would + verb → If I had more time, I would volunteer.",
+      "Third: if + past perfect, would have + past participle → If she had left earlier, she would have caught the train.",
+    ],
+    examples: [
+      { sentence: "If you practise regularly, your confidence will grow.", note: "real possibility" },
+      { sentence: "If I lived closer, I would walk to work.", note: "imaginary present" },
+      { sentence: "If we had checked the map, we would not have got lost.", note: "imaginary past" },
+    ],
+    commonMistakes: [
+      {
+        incorrect: "If it will rain, we will cancel the picnic.",
+        correct: "If it rains, we will cancel the picnic.",
+        why: "Use the present simple after if in the first conditional.",
+      },
+      {
+        incorrect: "If I would know, I would tell you.",
+        correct: "If I knew, I would tell you.",
+        why: "Use the past simple in the if-clause of the second conditional.",
+      },
+    ],
+    questions: [
+      {
+        id: "cond-1",
+        prompt: "If I finish early, I ___ you a message.",
+        options: ["send", "sent", "will send", "would sent"],
+        correctIndex: 2,
+        explanation: "The first conditional uses will + base verb in the result clause.",
+      },
+      {
+        id: "cond-2",
+        prompt: "If she had studied harder, she ___ the test.",
+        options: ["passes", "would pass", "will pass", "would have passed"],
+        correctIndex: 3,
+        explanation: "The third conditional uses would have + past participle for an imaginary past result.",
+      },
+      {
+        id: "cond-3",
+        prompt: "Choose the correct sentence.",
+        options: [
+          "If I were you, I would ask for help.",
+          "If I would be you, I asked for help.",
+          "If I am you, I will asked for help.",
+          "If I was you, I would asking for help.",
+        ],
+        correctIndex: 0,
+        explanation: "The second conditional uses if + past form and would + base verb.",
+      },
+    ],
+  },
+  {
+    id: "inversion-for-emphasis",
+    title: "Inversion for Emphasis",
+    level: "C1",
+    summary: "Use formal inversion after negative and limiting adverbials to emphasise an idea.",
+    explanation: [
+      "In formal writing, a negative or limiting expression at the beginning can be followed by auxiliary verb, subject and main verb.",
+      "This structure is common in essays and reports, but it is less common in everyday conversation.",
+    ],
+    form: [
+      "Rarely + auxiliary + subject + verb → Rarely do we see such a rapid change.",
+      "Not only + auxiliary + subject + verb → Not only did the plan save money, but it also reduced waste.",
+    ],
+    examples: [
+      { sentence: "Seldom have researchers observed this behaviour in the wild.", note: "formal emphasis" },
+      { sentence: "Not until noon did the results become available.", note: "time expression" },
+    ],
+    commonMistakes: [
+      {
+        incorrect: "Rarely we see such a rapid change.",
+        correct: "Rarely do we see such a rapid change.",
+        why: "After a fronted negative adverbial, place the auxiliary before the subject.",
+      },
+    ],
+    questions: [
+      {
+        id: "inv-1",
+        prompt: "Rarely ___ such a successful community project.",
+        options: ["we see", "do we see", "we saw", "see we"],
+        correctIndex: 1,
+        explanation: "Rarely at the beginning requires auxiliary inversion: do we see.",
+      },
+      {
+        id: "inv-2",
+        prompt: "Not until the final report ___ the scale of the problem.",
+        options: ["we understood", "did we understand", "understood we", "we did understand"],
+        correctIndex: 1,
+        explanation: "Not until at the beginning is followed by auxiliary + subject + verb.",
+      },
+    ],
+  },
+  {
+    id: "hedging-in-academic-writing",
+    title: "Hedging in Academic Writing",
+    level: "C2",
+    summary: "Express claims carefully by showing degrees of certainty and avoiding overstatement.",
+    explanation: [
+      "Academic writing often uses may, might, appears to and tends to in order to distinguish evidence from certainty.",
+      "Hedging makes a claim more precise; it does not necessarily make the argument weaker.",
+    ],
+    form: [
+      "Evidence + appears/seems + to + verb → The policy appears to have reduced delays.",
+      "It is possible/probable that + clause → It is possible that the results reflect seasonal change.",
+    ],
+    examples: [
+      { sentence: "The findings may indicate a change in consumer behaviour.", note: "possibility" },
+      { sentence: "The difference appears to be statistically significant.", note: "careful conclusion" },
+    ],
+    commonMistakes: [
+      {
+        incorrect: "The results prove that the policy always works.",
+        correct: "The results suggest that the policy is often effective.",
+        why: "Avoid absolute claims when the evidence only supports a cautious conclusion.",
+      },
+    ],
+    questions: [
+      {
+        id: "hedge-1",
+        prompt: "Which sentence makes the most cautious claim?",
+        options: [
+          "The survey proves the policy is perfect.",
+          "The survey may suggest that the policy is effective.",
+          "The survey always shows the policy works.",
+          "The survey guarantees success.",
+        ],
+        correctIndex: 1,
+        explanation: "May suggest signals possibility rather than certainty.",
+      },
+      {
+        id: "hedge-2",
+        prompt: "The results ___ to support the original hypothesis.",
+        options: ["appear", "must", "prove always", "are guarantee"],
+        correctIndex: 0,
+        explanation: "Appear to is a standard way to express a cautious interpretation.",
+      },
+    ],
+  },
 ];
 
 export function getGrammarTopic(id: string): GrammarTopic | undefined {

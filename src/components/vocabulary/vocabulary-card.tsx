@@ -10,7 +10,7 @@ export function VocabularyCard({ item }: { item: VocabularyItem }) {
         <div className="min-w-0">
           <h3 className="text-xl font-semibold">{item.word}</h3>
           <p className="text-sm text-muted">
-            {item.ipa} · <span className="italic">{item.partOfSpeech}</span>
+            {item.ipa} · <span className="italic">{item.kind === "idiom" ? "idiom" : item.partOfSpeech}</span>
           </p>
         </div>
         <SpeakButton text={item.word} />

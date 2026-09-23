@@ -1,6 +1,6 @@
 # English Certification Coach
 
-A web app for learning English from A1 to B2 and getting ready for IELTS, TOEIC,
+A web app for learning English from A1 to C2 and getting ready for IELTS, TOEIC,
 Cambridge and similar exams. Built with Next.js, React, TypeScript and Tailwind CSS.
 
 ## What works now (Milestone 1, mock data)
@@ -8,7 +8,7 @@ Cambridge and similar exams. Built with Next.js, React, TypeScript and Tailwind 
 | Page | Features |
 | --- | --- |
 | `/dashboard` | CEFR level, overall and per-skill progress, learning streak, recent quiz scores, recommended next activity, weak areas |
-| `/vocabulary` | 32 words (A1–B2, 7 topics) with IPA, Vietnamese meaning, definition and example. Search (works without Vietnamese accents too), level and topic filters, listen button, flashcards with a review round for missed words, and a multiple-choice quiz (two types) with score |
+| `/vocabulary` | Words and idioms from A1–C2 with IPA, Vietnamese meaning, definition and example. Search (works without Vietnamese accents too), level and topic filters, listen button, flashcards with a review round for missed words, and a multiple-choice quiz (two types) with score |
 | `/grammar` | 8 topics: explanation, form, examples, common mistakes, 5-question quiz with answer checking, explanations and score |
 
 There is no database yet. Data is in `src/data`.
@@ -31,7 +31,20 @@ npm run dev         # development server
 npm run lint        # ESLint
 npm run typecheck   # TypeScript check
 npm run build       # production build
+npm run content:validate # Validate content IDs, levels and quiz questions
 ```
+
+Create a starter for new content with:
+
+```bash
+npm run content:new -- vocabulary C1 academic-writing
+npm run content:new -- grammar C2 advanced-inversion
+npm run content:new -- reading B2 sustainable-travel
+npm run content:new -- idiom B1 break-the-ice
+```
+
+Complete the generated file in `content/inbox`, copy the item into the matching
+file under `src/data`, and run `npm run content:validate` before committing.
 
 ## Project structure
 
