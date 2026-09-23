@@ -1,4 +1,5 @@
 import type { GrammarTopic } from "@/types/learning";
+import generatedGrammar from "@/data/generated/grammar.json";
 
 /**
  * Mock grammar content: the eight starter topics from the project spec.
@@ -778,6 +779,7 @@ export const grammarTopics: GrammarTopic[] = [
       },
     ],
   },
+  ...(generatedGrammar as GrammarTopic[]),
 ];
 
 export function getGrammarTopic(id: string): GrammarTopic | undefined {

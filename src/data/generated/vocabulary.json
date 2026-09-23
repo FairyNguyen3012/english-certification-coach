@@ -1,0 +1,82 @@
+[
+  {
+    "id": "daily-routine",
+    "word": "daily routine",
+    "ipa": "/ˌdeɪli ruːˈtiːn/",
+    "partOfSpeech": "noun",
+    "definition": "the usual activities you do each day",
+    "vietnamese": "thói quen hằng ngày",
+    "example": "My daily routine starts with a short walk.",
+    "level": "A1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "look-after",
+    "word": "look after",
+    "ipa": "/lʊk ˈɑːftə(r)/",
+    "partOfSpeech": "phrasal verb",
+    "definition": "to take care of someone or something",
+    "vietnamese": "chăm sóc",
+    "example": "Can you look after my cat this weekend?",
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "make-progress",
+    "word": "make progress",
+    "ipa": "/meɪk ˈprəʊɡres/",
+    "partOfSpeech": "verb",
+    "definition": "to develop or improve gradually",
+    "vietnamese": "tiến bộ",
+    "example": "She is making progress with her English.",
+    "level": "B1",
+    "topic": "Education",
+    "synonyms": [
+      "improve"
+    ]
+  },
+  {
+    "id": "cost-effective",
+    "word": "cost-effective",
+    "ipa": "/ˌkɒst ɪˈfektɪv/",
+    "partOfSpeech": "adjective",
+    "definition": "producing good results without costing too much",
+    "vietnamese": "tiết kiệm chi phí",
+    "example": "The team found a cost-effective way to train staff.",
+    "level": "B2",
+    "topic": "Work",
+    "synonyms": [
+      "economical"
+    ]
+  },
+  {
+    "id": "mitigate",
+    "word": "mitigate",
+    "ipa": "/ˈmɪtɪɡeɪt/",
+    "partOfSpeech": "verb",
+    "definition": "to make a harmful situation less serious",
+    "vietnamese": "giảm nhẹ, giảm thiểu",
+    "example": "Trees can help mitigate the effects of extreme heat.",
+    "level": "C1",
+    "topic": "Environment",
+    "synonyms": [
+      "alleviate",
+      "reduce"
+    ]
+  },
+  {
+    "id": "discerning",
+    "word": "discerning",
+    "ipa": "/dɪˈsɜːnɪŋ/",
+    "partOfSpeech": "adjective",
+    "definition": "able to judge quality and differences accurately",
+    "vietnamese": "sành sỏi, tinh tế",
+    "example": "The discerning reader noticed the author's subtle change in tone.",
+    "level": "C2",
+    "topic": "Education",
+    "synonyms": [
+      "perceptive",
+      "discriminating"
+    ]
+  }
+]

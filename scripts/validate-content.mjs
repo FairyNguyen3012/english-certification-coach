@@ -7,6 +7,8 @@ const sources = [
   ["vocabulary", "src/data/vocabulary/words.ts"],
   ["grammar", "src/data/grammar/topics.ts"],
   ["reading", "src/data/reading/passages.ts"],
+  ["generated vocabulary", "src/data/generated/vocabulary.json"],
+  ["generated grammar", "src/data/generated/grammar.json"],
 ];
 
 const errors = [];

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "there-is-and-there-are",
+    "title": "There is and There are",
+    "level": "A1",
+    "summary": "Talk about the existence and location of one or more things.",
+    "explanation": [
+      "Use there is with one thing and there are with more than one thing.",
+      "Use a question form to ask whether something exists in a place."
+    ],
+    "form": [
+      "There is + singular noun → There is a book on the table.",
+      "There are + plural noun → There are two windows in the room."
+    ],
+    "examples": [
+      {
+        "sentence": "There is a bus stop near my house.",
+        "note": "one thing"
+      },
+      {
+        "sentence": "There are three students in the room.",
+        "note": "more than one"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "There are a chair in the kitchen.",
+        "correct": "There is a chair in the kitchen.",
+        "why": "Use there is with a singular noun."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-a1-1",
+        "prompt": "___ a supermarket near here.",
+        "options": [
+          "There are",
+          "There is",
+          "They are",
+          "It are"
+        ],
+        "correctIndex": 1,
+        "explanation": "Supermarket is singular, so use there is."
+      },
+      {
+        "id": "generated-a1-2",
+        "prompt": "There ___ two parks in my town.",
+        "options": [
+          "is",
+          "are",
+          "be",
+          "am"
+        ],
+        "correctIndex": 1,
+        "explanation": "Parks is plural, so use there are."
+      }
+    ]
+  },
+  {
+    "id": "comparatives-and-superlatives",
+    "title": "Comparatives and Superlatives",
+    "level": "A2",
+    "summary": "Compare people, places and things using -er, more, -est and most.",
+    "explanation": [
+      "Use a comparative to compare two things and a superlative to compare one thing with a whole group.",
+      "Short adjectives usually take -er and -est; longer adjectives use more and most."
+    ],
+    "form": [
+      "adjective + -er + than → This route is shorter than that one.",
+      "the + most + adjective → This is the most useful tool."
+    ],
+    "examples": [
+      {
+        "sentence": "The blue bag is cheaper than the black bag."
+      },
+      {
+        "sentence": "That was the most exciting part of the trip."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "This test is more easier.",
+        "correct": "This test is easier.",
+        "why": "Do not use more with an adjective that already has the -er form."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-a2-1",
+        "prompt": "This route is ___ than the old one.",
+        "options": [
+          "short",
+          "shorter",
+          "shortest",
+          "more short"
+        ],
+        "correctIndex": 1,
+        "explanation": "Use the comparative shorter to compare two routes."
+      },
+      {
+        "id": "generated-a2-2",
+        "prompt": "It is the ___ building in the town.",
+        "options": [
+          "tall",
+          "taller",
+          "tallest",
+          "more tall"
+        ],
+        "correctIndex": 2,
+        "explanation": "Use the superlative tallest for one building in a group."
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-experiences",
+    "title": "Present Perfect for Experiences",
+    "level": "B1",
+    "summary": "Talk about experiences without saying exactly when they happened.",
+    "explanation": [
+      "Use have or has plus a past participle for experiences that connect to the present.",
+      "Use ever in questions and never for a negative experience. Use the past simple when a finished time is stated."
+    ],
+    "form": [
+      "Have/has + past participle → She has visited Hue.",
+      "Have you ever + past participle? → Have you ever tried scuba diving?"
+    ],
+    "examples": [
+      {
+        "sentence": "I have never flown in a helicopter.",
+        "note": "negative experience"
+      },
+      {
+        "sentence": "Have they ever won a competition?",
+        "note": "question"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "I have visited Hanoi last year.",
+        "correct": "I visited Hanoi last year.",
+        "why": "Use the past simple with a finished time such as last year."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-b1-1",
+        "prompt": "Have you ever ___ sushi?",
+        "options": [
+          "eat",
+          "ate",
+          "eaten",
+          "eating"
+        ],
+        "correctIndex": 2,
+        "explanation": "Present perfect uses have plus the past participle eaten."
+      },
+      {
+        "id": "generated-b1-2",
+        "prompt": "She ___ the museum yesterday.",
+        "options": [
+          "has visited",
+          "visits",
+          "visited",
+          "is visiting"
+        ],
+        "correctIndex": 2,
+        "explanation": "Yesterday is a finished time, so use the past simple visited."
+      }
+    ]
+  },
+  {
+    "id": "participle-clauses",
+    "title": "Participle Clauses",
+    "level": "B2",
+    "summary": "Make connected ideas more concise with present and past participles.",
+    "explanation": [
+      "A present participle clause can show two actions by the same subject happening together or in sequence.",
+      "A past participle clause often gives a passive or completed meaning."
+    ],
+    "form": [
+      "Present participle → Walking home, I called my sister.",
+      "Past participle → Designed for small spaces, the desk folds away."
+    ],
+    "examples": [
+      {
+        "sentence": "Having finished the report, she sent it to her manager.",
+        "note": "earlier action"
+      },
+      {
+        "sentence": "Built from recycled materials, the bench is very durable.",
+        "note": "passive meaning"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "Walking to work, the rain started.",
+        "correct": "Walking to work, I noticed the rain started.",
+        "why": "The implied subject of the participle clause must be the subject of the main clause."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-b2-1",
+        "prompt": "___ the instructions, he assembled the shelf.",
+        "options": [
+          "Read",
+          "Having read",
+          "Reads",
+          "To reading"
+        ],
+        "correctIndex": 1,
+        "explanation": "Having read shows that he read the instructions before assembling the shelf."
+      },
+      {
+        "id": "generated-b2-2",
+        "prompt": "___ in 2020, the centre now serves thousands of people.",
+        "options": [
+          "Opened",
+          "Opening",
+          "Open",
+          "Has opened"
+        ],
+        "correctIndex": 0,
+        "explanation": "Opened gives the completed passive meaning: the centre was opened."
+      }
+    ]
+  },
+  {
+    "id": "cleft-sentences",
+    "title": "Cleft Sentences",
+    "level": "C1",
+    "summary": "Highlight one part of a sentence for contrast or emphasis.",
+    "explanation": [
+      "Cleft sentences divide information into two clauses so the important element receives focus.",
+      "It-clefts often use It was or It is; what-clefts begin with what and identify an action or idea."
+    ],
+    "form": [
+      "It was + focus + that/who → It was Maya who found the solution.",
+      "What + clause + be → What we need is more reliable data."
+    ],
+    "examples": [
+      {
+        "sentence": "It was the timing that caused the problem.",
+        "note": "focus on a reason"
+      },
+      {
+        "sentence": "What matters is how the evidence is interpreted.",
+        "note": "focus on an idea"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "It was in June when the project began.",
+        "correct": "It was in June that the project began.",
+        "why": "Use that after the focused time expression in an it-cleft."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-c1-1",
+        "prompt": "It was the final paragraph ___ changed my opinion.",
+        "options": [
+          "who",
+          "where",
+          "that",
+          "what"
+        ],
+        "correctIndex": 2,
+        "explanation": "Use that to connect the focused noun phrase to the clause."
+      },
+      {
+        "id": "generated-c1-2",
+        "prompt": "What we need ___ a clearer plan.",
+        "options": [
+          "are",
+          "is",
+          "be",
+          "being"
+        ],
+        "correctIndex": 1,
+        "explanation": "The focused idea plan is singular, so use is."
+      }
+    ]
+  },
+  {
+    "id": "concession-and-qualification",
+    "title": "Concession and Qualification",
+    "level": "C2",
+    "summary": "Acknowledge limits and opposing views while making a precise argument.",
+    "explanation": [
+      "Although, while and admittedly introduce a concession: information that does not completely change the main claim.",
+      "Qualifying adverbs such as arguably, largely and relatively help a writer avoid claims that are too absolute."
+    ],
+    "form": [
+      "Although + concession, main claim → Although the sample was small, the pattern is noteworthy.",
+      "Qualifier + claim → The approach is arguably more sustainable."
+    ],
+    "examples": [
+      {
+        "sentence": "Admittedly, the proposal is expensive; nevertheless, it may save money later.",
+        "note": "balanced argument"
+      },
+      {
+        "sentence": "The results are broadly consistent with earlier research.",
+        "note": "qualified claim"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "incorrect": "Although the plan is costly, but it is effective.",
+        "correct": "Although the plan is costly, it is effective.",
+        "why": "Do not use although and but together in the same clause structure."
+      }
+    ],
+    "questions": [
+      {
+        "id": "generated-c2-1",
+        "prompt": "___ the evidence is limited, the conclusion is worth considering.",
+        "options": [
+          "Although",
+          "Despite of",
+          "But",
+          "Nevertheless of"
+        ],
+        "correctIndex": 0,
+        "explanation": "Although introduces the concession clause."
+      },
+      {
+        "id": "generated-c2-2",
+        "prompt": "The findings are ___ consistent with the earlier study.",
+        "options": [
+          "broadly",
+          "absolute",
+          "never",
+          "complete"
+        ],
+        "correctIndex": 0,
+        "explanation": "Broadly qualifies the claim and avoids suggesting exact agreement."
+      }
+    ]
+  }
+]

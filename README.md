@@ -32,8 +32,14 @@ npm run lint        # ESLint
 npm run typecheck   # TypeScript check
 npm run build       # production build
 npm run content:validate # Validate content IDs, levels and quiz questions
+npm run content:populate  # Add a starter word and grammar lesson for missing levels
 npm run data:check  # Check the A1-C2 authoring tree
 ```
+
+`content:populate` is safe to run repeatedly. It checks the generated runtime
+content and adds a starter vocabulary item and grammar lesson only for levels
+that are missing. It also records the generated starters in the matching
+`data/<level>/vocabulary.md` and `data/<level>/grammar.md` files.
 
 Create a starter for new content with:
 
