@@ -564,6 +564,73 @@ export const grammarTopics: GrammarTopic[] = [
       },
     ],
   },
+  {
+    id: "relative-clauses",
+    title: "Relative Clauses",
+    level: "B1",
+    summary: "Add information about a person, place or thing with who, which, that and where.",
+    explanation: [
+      "Use who for people, which for things and where for places. In defining relative clauses, that can replace who or which.",
+      "The relative clause comes immediately after the noun it describes, so the reader can identify exactly which person or thing you mean.",
+    ],
+    form: [
+      "person + who / that + verb → The student who won the prize smiled.",
+      "thing + which / that + verb → I read the article that you recommended.",
+      "place + where + subject + verb → This is the cafe where we met.",
+    ],
+    examples: [
+      { sentence: "The teacher who leads the club is from Canada.", note: "person" },
+      { sentence: "We visited a museum which opened last year.", note: "thing" },
+      { sentence: "That is the park where children practise football.", note: "place" },
+    ],
+    commonMistakes: [
+      {
+        incorrect: "The woman which works here is my aunt.",
+        correct: "The woman who works here is my aunt.",
+        why: "Use who, or that, for people.",
+      },
+      {
+        incorrect: "This is the school which I studied.",
+        correct: "This is the school where I studied.",
+        why: "Use where when the relative word means in or at that place.",
+      },
+    ],
+    questions: [
+      {
+        id: "rc-1",
+        prompt: "The book ___ you lent me was very interesting.",
+        options: ["who", "where", "which", "when"],
+        correctIndex: 2,
+        explanation: "Use which for a thing such as a book.",
+      },
+      {
+        id: "rc-2",
+        prompt: "The doctor ___ treated my brother was very kind.",
+        options: ["which", "who", "where", "what"],
+        correctIndex: 1,
+        explanation: "Use who for a person such as a doctor.",
+      },
+      {
+        id: "rc-3",
+        prompt: "This is the town ___ my grandparents live.",
+        options: ["who", "which", "where", "what"],
+        correctIndex: 2,
+        explanation: "Use where for a place followed by a subject and verb.",
+      },
+      {
+        id: "rc-4",
+        prompt: "Choose the correct sentence.",
+        options: [
+          "I met a student which speaks three languages.",
+          "I met a student where speaks three languages.",
+          "I met a student who speaks three languages.",
+          "I met a student what speaks three languages.",
+        ],
+        correctIndex: 2,
+        explanation: "Who introduces information about a person: a student who speaks three languages.",
+      },
+    ],
+  },
 ];
 
 export function getGrammarTopic(id: string): GrammarTopic | undefined {

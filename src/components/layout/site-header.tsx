@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/vocabulary", label: "Vocabulary" },
   { href: "/grammar", label: "Grammar" },
+  { href: "/reading", label: "Reading" },
 ];
 
 export function SiteHeader() {

@@ -9,7 +9,7 @@ export const SKILL_LABELS: Record<SkillArea, string> = {
 };
 
 /** Skills that have a working page in the current milestone. */
-export const AVAILABLE_SKILLS: SkillArea[] = ["vocabulary", "grammar"];
+export const AVAILABLE_SKILLS: SkillArea[] = ["vocabulary", "grammar", "reading"];
 
 export function getOverallProgress(progress: LearnerProgress): number {
   const values = Object.values(progress.skills);

@@ -79,6 +79,15 @@ export interface GrammarTopic {
   questions: MultipleChoiceQuestion[];
 }
 
+export interface ReadingPassage {
+  id: string;
+  title: string;
+  level: CefrLevel;
+  topic: string;
+  paragraphs: string[];
+  questions: MultipleChoiceQuestion[];
+}
+
 export type SkillArea =
   | "vocabulary"
   | "grammar"
