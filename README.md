@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# English Certification Coach
 
-## Getting Started
+A web app for learning English from A1 to B2 and getting ready for IELTS, TOEIC,
+Cambridge and similar exams. Built with Next.js, React, TypeScript and Tailwind CSS.
 
-First, run the development server:
+## What works now (Milestone 1, mock data)
+
+| Page | Features |
+| --- | --- |
+| `/dashboard` | CEFR level, overall and per-skill progress, learning streak, recent quiz scores, recommended next activity, weak areas |
+| `/vocabulary` | 32 words (A1–B2, 7 topics) with IPA, Vietnamese meaning, definition and example. Search (works without Vietnamese accents too), level and topic filters, listen button, flashcards with a review round for missed words, and a multiple-choice quiz (two types) with score |
+| `/grammar` | 8 topics: explanation, form, examples, common mistakes, 5-question quiz with answer checking, explanations and score |
+
+There is no database yet. Data is in `src/data`.
+
+## Getting started
+
+Requirements: Node.js 20.9 or newer.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev         # development server
+npm run lint        # ESLint
+npm run typecheck   # TypeScript check
+npm run build       # production build
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/          pages (dashboard, vocabulary, grammar)
+  components/   ui/, quiz/, layout/, dashboard/, vocabulary/, grammar/
+  data/         learning content and mock progress
+  lib/          quiz building and scoring, filters, progress logic
+  types/        shared TypeScript types
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adding content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- New word: add an object to `src/data/vocabulary/words.ts`. TypeScript checks the fields.
+- New grammar topic: add an object to `src/data/grammar/topics.ts`. The page is created automatically at `/grammar/<id>`.
 
-## Deploy on Vercel
+## Next steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Reading → Listening → Speaking with AI feedback → Progress page → Supabase → Claude API.
+See `CLAUDE.md` for rules to follow when working with Claude Code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Secrets
+
+Copy `.env.example` to `.env.local` when you add Supabase or the Claude API.
+`.env.local` is git-ignored. Never put API keys in client-side code.
