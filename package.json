@@ -11,6 +11,7 @@
     "content:validate": "node scripts/validate-content.mjs",
     "content:new": "node scripts/new-content.mjs",
     "content:populate": "node scripts/populate-content.mjs",
+    "content:coverage": "node scripts/check-vocabulary-coverage.mjs",
     "data:check": "node scripts/check-data-tree.mjs"
   },
   "dependencies": {

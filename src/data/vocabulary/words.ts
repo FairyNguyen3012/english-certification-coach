@@ -1,5 +1,7 @@
 import type { VocabularyItem } from "@/types/learning";
 import generatedVocabulary from "@/data/generated/vocabulary.json";
+import topicVocabulary from "@/data/generated/topic-vocabulary.json";
+import { moreVocabularyItems } from "@/data/vocabulary/more-words";
 
 /**
  * Mock vocabulary content (A1–C2). IPA uses UK dictionary-style transcription.
@@ -528,7 +530,9 @@ export const vocabularyItems: VocabularyItem[] = [
     topic: "Environment",
     synonyms: ["unparalleled", "historic"],
   },
+  ...moreVocabularyItems,
   ...(generatedVocabulary as VocabularyItem[]),
+  ...(topicVocabulary as VocabularyItem[]),
 ];
 
 export const vocabularyTopics = Array.from(

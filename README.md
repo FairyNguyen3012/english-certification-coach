@@ -33,8 +33,14 @@ npm run typecheck   # TypeScript check
 npm run build       # production build
 npm run content:validate # Validate content IDs, levels and quiz questions
 npm run content:populate  # Add a starter word and grammar lesson for missing levels
+npm run content:coverage  # Check vocabulary for every topic at every level
 npm run data:check  # Check the A1-C2 authoring tree
 ```
+
+Topic vocabulary is stored in `src/data/generated/topic-vocabulary.json`.
+Add another unique item with its `level` and `topic`, then run
+`npm run content:coverage`, `npm run content:validate` and `npm run typecheck`.
+The app currently covers all seven vocabulary topics at every A1-C2 level.
 
 `content:populate` is safe to run repeatedly. It checks the generated runtime
 content and adds a starter vocabulary item and grammar lesson only for levels
