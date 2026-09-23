@@ -6,9 +6,16 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/topics", label: "Topics" },
   { href: "/vocabulary", label: "Vocabulary" },
   { href: "/grammar", label: "Grammar" },
+  { href: "/word-forms", label: "Word forms" },
+  { href: "/prepositions", label: "Prepositions" },
+  { href: "/pronunciation", label: "Pronunciation" },
   { href: "/reading", label: "Reading" },
+  { href: "/speaking", label: "Speaking" },
+  { href: "/practice", label: "Daily practice" },
+  { href: "/test", label: "Tests" },
 ];
 
 export function SiteHeader() {
