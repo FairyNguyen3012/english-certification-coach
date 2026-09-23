@@ -47,6 +47,14 @@ content and adds a starter vocabulary item and grammar lesson only for levels
 that are missing. It also records the generated starters in the matching
 `data/<level>/vocabulary.md` and `data/<level>/grammar.md` files.
 
+To deliberately add another batch for every level, pass a count:
+
+```bash
+npm run content:populate -- --count 1
+```
+
+This adds one new vocabulary item and one new grammar lesson for each level.
+
 Create a starter for new content with:
 
 ```bash
