@@ -32,6 +32,7 @@ npm run lint        # ESLint
 npm run typecheck   # TypeScript check
 npm run build       # production build
 npm run content:validate # Validate content IDs, levels and quiz questions
+npm run data:check  # Check the A1-C2 authoring tree
 ```
 
 Create a starter for new content with:

@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "content:validate": "node scripts/validate-content.mjs",
-    "content:new": "node scripts/new-content.mjs"
+    "content:new": "node scripts/new-content.mjs",
+    "data:check": "node scripts/check-data-tree.mjs"
   },
   "dependencies": {
     "next": "16.3.6",
