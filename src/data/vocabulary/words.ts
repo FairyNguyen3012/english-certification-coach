@@ -502,6 +502,31 @@ export const vocabularyItems: VocabularyItem[] = [
     topic: "Technology",
     kind: "idiom",
   },
+  {
+    id: "substantial",
+    word: "substantial",
+    ipa: "/səbˈstænʃəl/",
+    partOfSpeech: "adjective",
+    definition: "large in amount, value or importance",
+    vietnamese: "đáng kể, lớn",
+    example: "The project requires a substantial investment of time.",
+    level: "C1",
+    topic: "Work",
+    synonyms: ["considerable", "significant"],
+    antonyms: ["minor"],
+  },
+  {
+    id: "unprecedented",
+    word: "unprecedented",
+    ipa: "/ʌnˈpresɪdentɪd/",
+    partOfSpeech: "adjective",
+    definition: "never having happened or existed before",
+    vietnamese: "chưa từng có tiền lệ",
+    example: "The city faced an unprecedented rise in demand for housing.",
+    level: "C2",
+    topic: "Environment",
+    synonyms: ["unparalleled", "historic"],
+  },
 ];
 
 export const vocabularyTopics = Array.from(
